@@ -122,7 +122,7 @@ By using TUIParted, you understand and acknowledge that:
 3. **Partition operations are inherently dangerous** and can render your system inoperable
 4. **The author assumes no responsibility** for any consequences of using this software
 
-**Always test on non-production systems first.**
+**Always test on systems without important data.**
 
 ---
 
