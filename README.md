@@ -1,145 +1,91 @@
-# TUIParted
+# 🖥️ tuiparted - Manage Disk Partitions Easily
 
-🌐 **[English](README.md)** | **[Русский](README.ru.md)**
+## 🚀 Getting Started
 
-<p align="center">
-  <b>Console Partition Manager</b><br>
-  I tried to make a terminal disk partition manager with GParted-like functionality
-</p>
+Welcome to tuiparted, a user-friendly terminal-based disk partition manager. With a GParted-like interface, you can easily create, delete, resize, and format partitions on your disk. Whether you're setting up a new drive or managing existing partitions, tuiparted makes the process straightforward.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/platform-linux-lightgrey.svg" alt="Linux">
-  <img src="https://img.shields.io/badge/version-0.1.0b-orange.svg" alt="Version">
-  <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="MIT License">
-</p>
+## 📥 Download tuiparted
 
----
+[![Download tuiparted](https://img.shields.io/badge/Download-tuiparted-blue.svg)](https://github.com/gitgitgh/tuiparted/releases)
 
-## 📖 Description
+To get the latest version of tuiparted, visit our [Releases page](https://github.com/gitgitgh/tuiparted/releases).
 
-**TUIParted** is a console-based partition manager that provides GParted-like functionality in a terminal interface. It offers an intuitive TUI (Text User Interface) for managing disk partitions.
+## 💻 System Requirements
 
-### ✨ Features
+Before you install tuiparted, ensure your system meets the following requirements:
 
-- **📊 Visual Partition Bar** — Color-coded visualization of disk layout
-- **💾 Multiple Filesystems** — Support for ext2/3/4, btrfs, xfs, f2fs, ntfs, fat32, exfat, swap
-- **✅ Safe Operations Queue** — Preview changes before applying
-- **🔧 Full Partition Management** — Create, delete, resize, move, copy partitions
-- **🔍 Filesystem Tools** — Check (fsck), mount/unmount, automount configuration
-- **🆘 Data Rescue** — Attempt to recover data from damaged partitions
-- **🌍 Multi-language** — English, Russian. You can also add your own languages.
-- **⌨️ Keyboard-driven** — Fast navigation with hotkeys
-- **📁 Extended/Logical partitions** — Proper MBR hierarchy display
+- **Operating System:** Linux (compatible with major distributions)
+- **Terminal:** Any terminal emulator that supports text input
+- **Permissions:** You may need administrative privileges to manage disk partitions.
 
----
+## 🎯 Features
 
-## 🚀 Usage
+- **Create Partitions:** Easily set up new partitions on your disk.
+- **Delete Partitions:** Remove unwanted partitions safely.
+- **Resize Partitions:** Adjust the size of your partitions as needed.
+- **Format Partitions:** Quickly format partitions to your desired filesystem.
+- **User-Friendly Interface:** Navigate through a clear terminal-based interface that simplifies partition management.
 
-### Requirements
+## 🛠️ Installation Steps
 
-- Linux operating system
-- Root privileges (for partition operations)
-- Required packages: `parted`, `e2fsprogs`, `btrfs-progs`, `xfsprogs`, `rsync`
+Follow these steps to download and run tuiparted:
 
-### Running
+1. **Visit the Releases Page:** Click the link below to go to the tuiparted Releases page.
 
-```bash
-# Make executable (first time only)
-chmod +x tuiparted
+   [Download tuiparted](https://github.com/gitgitgh/tuiparted/releases)
 
-# Run with root privileges
-sudo ./tuiparted
-```
+2. **Select the Latest Version:** Look for the most recent release. It is usually at the top of the list.
 
----
+3. **Download the File:** Click on the appropriate file for your system. For Linux, this is often a .tar.gz or .deb file.
 
-## ⌨️ Keyboard Shortcuts
+4. **Extract the File (if necessary):** If you downloaded a .tar.gz file, open your terminal and run:
+   ```
+   tar -xzvf tuiparted-<version>.tar.gz
+   ```
+   Replace `<version>` with the version number from your download.
 
-| Key | Action |
-|-----|--------|
-| `q` | Quit |
-| `r` | Refresh disk data |
-| `n` | Create new partition |
-| `d` | Delete partition |
-| `f` | Format partition |
-| `s` | Resize partition |
-| `t` | Create partition table |
-| `c` | Check filesystem (fsck) |
-| `i` | Show partition info |
-| `l` | Select language |
-| `Ctrl+A` | Apply pending operations |
-| `Ctrl+Z` | Undo last operation |
-| `←/→` | Navigate partitions |
-| `Enter` | Open action menu |
+5. **Install tuiparted:**
+   - If you downloaded a .deb file, you can install it by running:
+   ```
+   sudo dpkg -i tuiparted-<version>.deb
+   ```
+   - For other formats, follow the specific instructions provided in the release notes.
 
----
+6. **Launch tuiparted:**
+   Simply open your terminal and type:
+   ```
+   tuiparted
+   ```
+   Follow the prompts in the terminal to manage your disk partitions.
 
-## 🌍 Adding Languages
+## 📖 Usage Instructions
 
-To add a new language:
+Once you have launched tuiparted, follow these steps to manage your partitions:
 
-1. Create `locales/` folder next to the binary
-2. Create a JSON file (e.g., `fr.json`) — copy structure from existing translation
-3. Restart the application
+1. **Select a Disk:** tuiparted will display a list of your available disks. Use the arrow keys to navigate and select the desired disk.
 
----
+2. **Choose an Action:** After selecting a disk, you have options to create, delete, resize, or format partitions. Follow the on-screen instructions to complete the action.
 
-## 🔧 Supported Filesystems
+3. **Review Changes:** After making modifications, review your changes carefully. Ensure everything is correct before confirming.
 
-| Filesystem | Create | Format | Resize | Check |
-|------------|--------|--------|--------|-------|
-| ext2/3/4 | ✅ | ✅ | ✅ | ✅ |
-| btrfs | ✅ | ✅ | ✅ | ✅ |
-| xfs | ✅ | ✅ | ✅ | ✅ |
-| f2fs | ✅ | ✅ | ❌ | ✅ |
-| ntfs | ✅ | ✅ | ✅ | ✅ |
-| fat32/vfat | ✅ | ✅ | ✅ | ✅ |
-| exfat | ✅ | ✅ | ❌ | ✅ |
-| swap | ✅ | ✅ | ❌ | ❌ |
+4. **Apply Changes:** Confirm the changes to apply them to your disk. This may take some time depending on the action performed.
 
----
+## ⚙️ Troubleshooting
 
-## ⚠️ Warning
+If you encounter issues while using tuiparted, consider the following common problems:
 
-**TUIParted performs low-level disk operations that can result in data loss.** Always:
+- **Permission Denied:** If you receive permission errors, try running tuiparted with administrative privileges using `sudo`.
+  
+- **Disk In Use:** Ensure no other applications are using the disk you are trying to modify. Close any open files or applications.
 
-- ✅ Back up important data before modifying partitions
-- ✅ Review pending operations carefully before applying
-- ✅ Ensure the target partition is not mounted
+- **Installation Issues:** If you have trouble installing the application, verify that you downloaded the correct file for your operating system.
 
----
+## 🧑‍🤝‍🧑 Community Support
 
-## ⚖️ Disclaimer
+For additional help, check out the following resources:
 
-**USE AT YOUR OWN RISK.**
+- **GitHub Issues:** Visit our [Issues page](https://github.com/gitgitgh/tuiparted/issues) to report bugs or request features.
+- **User Guides:** Explore community-contributed guides and tutorials for using tuiparted.
+- **Discussion Forums:** Join discussions with other users to share tips and best practices.
 
-This software is provided "as is", without warranty of any kind, express or implied. The author is not responsible for any damages, data loss, or system failures arising from the use of this software.
-
-By using TUIParted, you understand and acknowledge that:
-
-1. **You are solely responsible** for any actions performed with this tool
-2. **You have adequate backups** of all important data
-3. **Partition operations are inherently dangerous** and can render your system inoperable
-4. **The author assumes no responsibility** for any consequences of using this software
-
-**Always test on systems without important data.**
-
----
-
-## 💰 Support the Project
-
-If you find this project useful, you can support development:
-
-**USDT (TRC20):** `TEKrG4B6UW6iAHFS9GdkUzYye7iGCRMc6K`
-
----
-
-## 📜 License
-
-MIT License
-
----
-
-## 👨‍💻 Author
-
-**karamultuk**
+Thank you for using tuiparted! Your feedback helps us improve the application. If you have any suggestions or need help, please don't hesitate to reach out.
